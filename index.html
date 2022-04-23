@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css?ver=1.1.0">
+</head>
+<body>
+	
+<!-- 
+		 [ C O O R D S ]  
+ -->
+
+ 	<div class="coordLine">
+ 		<div class="coordY">
+ 			<div class="innerCoord">
+ 				<div class="todle"></div>
+ 			</div>
+ 		</div>
+ 		<div class="coordX">
+ 			<div class="innerCoord">
+ 				<div class="todle"></div>	
+ 			</div>
+ 		</div>	
+ 	</div>
+
+<!-- 
+		 [ C U R S O R ]  
+ -->
+
+	<div class="cursor" style="display: none;"></div>
+	<div class="tail"   style="display: none;"></div>
+
+	<main>
+
+<!-- 
+		 [ H E A D E R ]  
+ -->
+
+			 <header>
+
+			 	<button class="authButton actionCursor">
+			 		<a href="index.html">войти</a>
+			 	</button>
+
+			 	<nav>
+			 		<ul class="navMenu">
+			 			<li class="actionCursor" dataColor="yellowColor">Забронировано</li>
+			 			<li class="actionCursor" dataColor="redColor">Занято</li>
+			 			<li class="actionCursor" dataColor="greenColor">Свободно</li>
+			 		</ul>
+			 	</nav>
+
+			 </header>
+
+<!-- 
+		 [ M A P ]  
+ -->
+
+			 <div id="map">
+			 	<!-- F l o o r - 1 -->
+				 	<div class="floor_1 floor floor_wrapper">
+				 		<!-- l i n e - 1-->
+					 		<div class="row roomLine">
+
+					 			<div class="emptyBox"></div>
+
+					 				<div class="roomContainer">
+					 					<div class="room actionCursor" indexRoom="101" dataColor="greenColor"></div>
+					 					<div class="room actionCursor" indexRoom="103" dataColor="greenColor"></div>
+					 				</div>
+
+					 			<div class="emptyBox"></div>
+					 			<div class="room actionCursor"  indexRoom="105" dataColor="greenColor"></div>
+					 			<div class="stairs"></div>
+
+					 				<div class="roomContainer">
+					 					
+					 				</div>
+
+					 			<div class="bigContainer"></div>
+
+					 			<div class="emptyBox"></div>
+					 			<div class="room actionCursor"  indexRoom="107" dataColor="greenColor"></div>
+					 			<div class="stairs"></div>
+					 			<div class="room actionCursor"  indexRoom="109" dataColor="greenColor"></div>
+					 			<div class="emptyBox"></div>
+
+					 				<div class="roomContainer">
+					 					<div class="room actionCursor"  indexRoom="111" dataColor="greenColor"></div>
+					 					<div class="room actionCursor"  indexRoom="113" dataColor="greenColor"></div>
+					 				</div>
+
+					 			<div class="emptyBox"></div>
+
+					 		</div>
+
+					 	<!-- C o r r i d o r -->
+				 			<div class="row corridor">
+				 				<div class="innerCoridor"></div>
+				 			</div>
+
+				 		<!-- l i n e - 2 -->
+					 		<div class="row roomLine">
+					 			
+					 			<div class="emptyBox"></div>
+
+					 				<div class="roomContainer">
+					 					<div class="room actionCursor"  indexRoom="102" dataColor="greenColor"></div>
+					 					<div class="room actionCursor"  indexRoom="104" dataColor="greenColor"></div>
+					 				</div>
+
+					 			<div class="emptyBox"></div>
+					 			<div class="room actionCursor"  indexRoom="106" dataColor="greenColor"></div>
+					 			<div class="room actionCursor"  indexRoom="108" dataColor="greenColor"></div>
+					 			<div class="emptyBox"></div>
+
+						 			<div class="roomContainer"></div>
+						 			<div class="roomContainer"></div>
+						 			<div class="roomContainer"></div>
+
+					 			<div class="emptyBox"></div>
+					 			<div class="emptyBox"></div>
+					 			<div class="emptyBox"></div>
+					 			<div class="emptyBox"></div>
+
+					 				<div class="roomContainer">
+					 					<div class="room actionCursor"  indexRoom="110" dataColor="greenColor"></div>
+					 					<div class="room actionCursor"  indexRoom="112" dataColor="greenColor"></div>
+					 				</div>
+
+					 			<div class="emptyBox"></div>
+					 			
+					 		</div>
+				 	</div>
+
+				 <!-- F l o o r - 2 -->
+			 			
+			 </div>
+
+<!-- 
+		 [ S I D E  B A R ]  
+ -->
+
+			 <div id="sideBar">
+			 	<div class="inner_sideBar">
+			 		<!-- [F u l l  S c r e e n  B u t t o n] -->
+			 			<div class="sideBarHead">
+			 				<div class="inrHead">
+					 			<button id="FScreen_button" class="actionCursor">
+					 				<span class="inrButton"></span>	
+					 				<span class="line"></span>
+					 			</button>	
+					 		</div>	
+			 			</div>
+			 		<!---->
+
+			 		<!-- [F l o o r  C o u n t e r] -->
+			 			<div class="floorCounter">
+			 				<div class="wrapperCounter">
+
+			 					<div class="cursorCounter"></div>
+
+			 					<div class="innerCounter">
+				 					<ul>
+				 						<button class="moveUp actionCursor"></button>
+				 						<li class="usingFloor actionCursor">1</li>
+				 						<li class="actionCursor">2</li>
+				 						<li class="actionCursor">3</li>
+				 						<li class="actionCursor">4</li>
+				 						<li class="actionCursor">5</li>
+				 						<button class="moveDown actionCursor"></button>
+				 					</ul>
+				 				</div>
+
+			 				</div>
+			 			</div>
+			 		<!---->
+
+			 		<!-- [G r e e n  F o r m] -->
+			 			<div class="greenForm" style="display: none;">
+			 				<div>
+			 					<p class="title">
+				
+								</p>
+
+								<input type="text" placeholder="И м я :" class="actionCursor"><br>
+
+								<button class="submit actionCursor">З а б р о н и р о в а т ь</button>
+			 				</div>	
+			 			</div>
+			 	</div>			
+			 </div>
+
+	</main>
+
+	<!-- Контейнер тестовых данных (динамичных) -->
+		<div id="mainData">
+
+		</div>
+	<!--  -->
+
+	<script src="script.js?ver=1.0.9"></script>
+</body>
+</html>
